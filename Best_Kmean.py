@@ -13,6 +13,13 @@ sns.set_style("ticks")
 
 def Best_Kmean(X,k,df, random_state=104):
     
+    """ Return a dashboard showing n-k means approach 
+    Arg: 
+    x : array (depedent variables)
+    k : int (2 - infinitive) # number of K means to consider
+    df : DatFrame Pandas (This must be given because it takes columns name, and other information to create the dasboard
+    """
+    
     #taking Dataset copy to Find Clusters
     df_cluster = df.copy
     
